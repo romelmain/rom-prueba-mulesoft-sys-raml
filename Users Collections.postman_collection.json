@@ -12,6 +12,16 @@
 				{
 					"name": "Get All Users",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "f6A0hBLyP6VASfA3vFbgzDi8dO4GXLqira8peaX3Uq3jseZHFSOgDwtU5WPnzYKTocBRl3v3gNb4oYaRNAYVNA",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -104,17 +114,17 @@
 						"header": [
 							{
 								"key": "client_id",
-								"value": "rom-proxy",
+								"value": "1236",
 								"type": "text"
 							},
 							{
-								"key": "client_secet",
-								"value": "1234",
+								"key": "client_secret",
+								"value": "1236",
 								"type": "text"
 							},
 							{
 								"key": "client_name",
-								"value": "romel",
+								"value": "lal",
 								"type": "text"
 							}
 						],
@@ -141,12 +151,12 @@
 						"header": [
 							{
 								"key": "client_id",
-								"value": "rom-proxy",
+								"value": "1236",
 								"type": "text"
 							},
 							{
-								"key": "client_secet",
-								"value": "1234",
+								"key": "client_secret",
+								"value": "1236",
 								"type": "text"
 							},
 							{
