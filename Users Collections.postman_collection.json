@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "e12063d1-649f-4a2e-a8fb-e2a20d1c1199",
+		"name": "Users Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4492282"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get  User by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/users/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create New User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userName\": \"kremj3xx\",\r\n  \"name\": \"Karemkss\",\r\n  \"lastname\": \"Mezakss\",\r\n  \"email\": \"kmeza@gmail.com\",\r\n  \"password\": \"hg2223423\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Albums",
+			"item": [
+				{
+					"name": "Get Albums",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/albums",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"albums"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Token",
+			"item": [
+				{
+					"name": "createClient",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "client_id",
+								"value": "rom-proxy",
+								"type": "text"
+							},
+							{
+								"key": "client_secet",
+								"value": "1234",
+								"type": "text"
+							},
+							{
+								"key": "client_name",
+								"value": "romel",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://rom-mule-oauth-provider.us-e2.cloudhub.io/createClient",
+							"protocol": "http",
+							"host": [
+								"rom-mule-oauth-provider",
+								"us-e2",
+								"cloudhub",
+								"io"
+							],
+							"path": [
+								"createClient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getToken",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "client_id",
+								"value": "rom-proxy",
+								"type": "text"
+							},
+							{
+								"key": "client_secet",
+								"value": "1234",
+								"type": "text"
+							},
+							{
+								"key": "grant_type",
+								"value": "CLIENT_CREDENTIALS",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://rom-mule-oauth-provider.us-e2.cloudhub.io/token",
+							"protocol": "http",
+							"host": [
+								"rom-mule-oauth-provider",
+								"us-e2",
+								"cloudhub",
+								"io"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
